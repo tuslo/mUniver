@@ -1,0 +1,14 @@
+mongodb:
+  build: ./mongo_db
+  ports:
+    - "27018:27017"
+    - "8082:80"
+#  expose:
+#      - "27017"
+#      - "8082"
+  volumes:
+    - /vagrant/mongoUniver/mnt:/var/data/shared
+    - /vagrant/mongoUniver/data:/data
+  restart: always
+
+

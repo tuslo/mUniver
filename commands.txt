@@ -1,0 +1,2 @@
+docker rm -f docker_mongodb_1 && docker rmi docker_mongodb && docker-compose up -d && docker ps
+mongorestore dump
